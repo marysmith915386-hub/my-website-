@@ -684,20 +684,20 @@
       <div class="section-title">File a Report</div>
       <div class="form-group">
         <label>Full Name</label>
-        <input type="text" placeholder="Your full legal name" />
+        <input type="text" name="name" placeholder="Your full legal name" />
       </div>
       <div class="form-group">
         <label>Email Address</label>
-        <input type="email" placeholder="your@email.com" />
+        <input type="email" name="email" placeholder="your@email.com" />
         <div class="form-note">Used only for case follow-up. Never shared publicly.</div>
       </div>
       <div class="form-group">
         <label>Phone Number</label>
-        <input type="tel" placeholder="(555) 000-0000" />
+        <input type="tel" name="phone" placeholder="(555) 000-0000" />
       </div>
       <div class="form-group">
         <label>Type of Crime</label>
-        <select>
+        <select name="crime_type">
           <option value="">— Select Category —</option>
           <option>Financial / Bank Fraud</option>
           <option>Identity Theft</option>
@@ -712,20 +712,27 @@
       </div>
       <div class="form-group">
         <label>Date of Incident</label>
-        <input type="date" />
+        <input type="date" name="incident_date" />
       </div>
       <div class="form-group">
         <label>Description</label>
-        <textarea placeholder="Describe what happened in as much detail as possible — who, what, when, where, and how..."></textarea>
+        <textarea name="description" placeholder="Describe what happened in as much detail as possible — who, what, when, where, and how..."></textarea>
       </div>
       <div class="form-group">
         <label>Estimated Loss (if any)</label>
-        <input type="text" placeholder="e.g. $5,000" />
+        <input type="text" name="estimated_loss" placeholder="e.g. $5,000" />
       </div>
       <button class="submit-btn" onclick="submitReport()">🔒 Submit Report Securely</button>
       <div class="success-msg" id="success-msg">
         <strong>✅ Report Submitted Successfully</strong>
-        Your report has been received. A case number will be emailed to you within 24 hours.
+        <p style="margin-top:8px;font-size:13px;">Your report has been received. To get your report attended to immediately, contact us now:</p>
+        <div style="display:flex;flex-direction:column;gap:8px;margin-top:12px;">
+          <a href="mailto:colinmichealmcdonald001@gmail.com" style="display:flex;align-items:center;gap:8px;background:#0a2240;color:#fff;padding:10px 14px;border-radius:4px;text-decoration:none;font-size:13px;font-weight:600;">✉️ Email Us</a>
+          <a href="https://wa.me/13527566071" target="_blank" style="display:flex;align-items:center;gap:8px;background:#25D366;color:#fff;padding:10px 14px;border-radius:4px;text-decoration:none;font-size:13px;font-weight:600;">💬 WhatsApp</a>
+          <a href="https://signal.me/#p/+12522038671" target="_blank" style="display:flex;align-items:center;gap:8px;background:#3a76f0;color:#fff;padding:10px 14px;border-radius:4px;text-decoration:none;font-size:13px;font-weight:600;">🔵 Signal</a>
+          <a href="zangi://call/7523595287" style="display:flex;align-items:center;gap:8px;background:#6a0dad;color:#fff;padding:10px 14px;border-radius:4px;text-decoration:none;font-size:13px;font-weight:600;">🟣 Zangi</a>
+          <a href="https://x.com/ColinMcDonaldU" target="_blank" style="display:flex;align-items:center;gap:8px;background:#000;color:#fff;padding:10px 14px;border-radius:4px;text-decoration:none;font-size:13px;font-weight:600;">🐦 X (Twitter)</a>
+        </div>
       </div>
     </div>
 
@@ -734,31 +741,38 @@
       <div class="section-label" style="color: var(--gold-light);">Get in Touch</div>
       <div class="section-title">Contact Information</div>
       <div class="contact-item">
-        <div class="contact-icon">📍</div>
-        <div>
-          <div class="contact-label">Mailing Address</div>
-          <div class="contact-value">950 Pennsylvania Avenue NW<br/>Washington, DC 20530</div>
-        </div>
-      </div>
-      <div class="contact-item">
-        <div class="contact-icon">📞</div>
-        <div>
-          <div class="contact-label">Hotline</div>
-          <div class="contact-value"><a href="tel:18005551234">1-800-555-1234</a><br/><span style="font-size:12px;opacity:0.6;">Mon–Fri, 8 AM – 6 PM EST</span></div>
-        </div>
-      </div>
-      <div class="contact-item">
         <div class="contact-icon">✉️</div>
         <div>
           <div class="contact-label">Email</div>
-          <div class="contact-value"><a href="mailto:reports@fraudcenter.gov">reports@fraudcenter.gov</a></div>
+          <div class="contact-value"><a href="mailto:colinmichealmcdonald001@gmail.com">colinmichealmcdonald001@gmail.com</a></div>
         </div>
       </div>
       <div class="contact-item">
-        <div class="contact-icon">🔒</div>
+        <div class="contact-icon">💬</div>
         <div>
-          <div class="contact-label">Anonymous Tip Line</div>
-          <div class="contact-value"><a href="tel:18009990000">1-800-999-0000</a><br/><span style="font-size:12px;opacity:0.6;">Available 24/7 — No ID required</span></div>
+          <div class="contact-label">WhatsApp</div>
+          <div class="contact-value"><a href="https://wa.me/13527566071" target="_blank">+1 (352) 756-6071</a></div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">🔵</div>
+        <div>
+          <div class="contact-label">Signal</div>
+          <div class="contact-value"><a href="https://signal.me/#p/+12522038671" target="_blank">+1 (252) 203-8671</a></div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">🟣</div>
+        <div>
+          <div class="contact-label">Zangi</div>
+          <div class="contact-value"><a href="zangi://call/7523595287">7523595287</a></div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">🐦</div>
+        <div>
+          <div class="contact-label">X (Twitter)</div>
+          <div class="contact-value"><a href="https://x.com/ColinMcDonaldU" target="_blank">@ColinMcDonaldU</a></div>
         </div>
       </div>
     </div>
@@ -855,7 +869,7 @@
 </footer>
 
 <script>
-  function submitReport() {
+  async function submitReport() {
     const inputs = document.querySelectorAll('#report-form input, #report-form select, #report-form textarea');
     let valid = true;
     inputs.forEach(i => { if (!i.value.trim()) valid = false; });
@@ -863,10 +877,34 @@
       alert('Please fill in all fields before submitting.');
       return;
     }
-    document.getElementById('success-msg').style.display = 'block';
-    document.querySelector('.submit-btn').textContent = '✅ Report Submitted';
-    document.querySelector('.submit-btn').style.background = '#2e7d32';
-    inputs.forEach(i => { i.value = ''; i.disabled = true; });
+    const btn = document.querySelector('.submit-btn');
+    btn.textContent = '⏳ Submitting...';
+    btn.disabled = true;
+
+    const formData = new FormData();
+    inputs.forEach(i => { if (i.name) formData.append(i.name, i.value); });
+
+    try {
+      const response = await fetch('https://formspree.io/f/xvzybwdj', {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+      if (response.ok) {
+        document.getElementById('success-msg').style.display = 'block';
+        btn.textContent = '✅ Report Submitted';
+        btn.style.background = '#2e7d32';
+        inputs.forEach(i => { i.value = ''; i.disabled = true; });
+      } else {
+        btn.textContent = '🔒 Submit Report Securely';
+        btn.disabled = false;
+        alert('Something went wrong. Please try again.');
+      }
+    } catch (err) {
+      btn.textContent = '🔒 Submit Report Securely';
+      btn.disabled = false;
+      alert('Network error. Please check your connection and try again.');
+    }
   }
 
   // Smooth scroll for anchor links
